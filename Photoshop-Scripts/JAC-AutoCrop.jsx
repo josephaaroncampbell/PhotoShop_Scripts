@@ -1,8 +1,16 @@
-﻿////////////////////////////////////////////////////////////////////////////
+﻿/////////////////////////////////////////////////////////////////////////////////////////////////////
 //Creator: Joseph Aaron Campbell
 //http://josephaaroncampbell.com
 //Photographer/Imaging Specialist
-/////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+// This script is designed for 2d materials such as negatives, prints, and photographs.             //
+// so long that the object is rectangular in shape with at least three clean edges.                 //        
+// the script will locate the rectangular geometry of the object and calculate its bounds.          //
+// then crop and remove all pixels out of those bound, leaving a border of 1/8th of the ppi.        //
+// if the object is located near the edge of the image frame, so that the distance from the object  //
+// to the image edge is less than 1/8th of the ppi, then that value will be used as the border.     //
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 //assign a name to the original open document
 var currentDoc = activeDocument;
